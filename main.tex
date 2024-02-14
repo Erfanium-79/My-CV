@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\documentclass[11pt,letter,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 \moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
@@ -6,7 +6,7 @@
 \usepackage{lastpage}
 \usepackage{multicol}
 \usepackage{graphicx}
-\usepackage[scale=0.82]{geometry}%\usepackage{cmcyr}% Reduce document margins
+\usepackage[scale=0.81]{geometry}%\usepackage{cmcyr}% Reduce document margins
 
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
@@ -53,13 +53,13 @@
 %\extrainfo{}
 \social[linkedin]{erfannnasiri}
 \social[github]{Erfanium-79}
-\social[twitter]{nasiri\textunderscore erfan}
+\social[twitter]{nasiri_erfan}
 
 %\photo[70pt][0.2pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
 %\quote{"A witty and playful quotation" - John Smith}
 % custom color
 \definecolor{darkgreen}{RGB}{0, 150, 0} %green
-\rfoot { \color{gray} \emph{Erfan Nasiri} \bullet ~ \emph{\thepage}\emph{/3}}
+\rfoot { \color{gray} \emph{Erfan Nasiri} \bullet ~ \emph{\thepage}\emph{/2}}
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -106,8 +106,9 @@
         
 \section{HONORS \& AWARDS}
     \begin{itemize}
-        \item  Top 5\% in Iran's nationwide university entrance exam, among more than 155,000 participants. \hfill[Summer 2020]
-        \item Awarded a fully funded 4-year Bachelor of Science degree in Computer Engineering. [Fall 2020]
+        \item  Top 5\% in Iran's nationwide university entrance exam, among more than 155,000  \hfill[Summer 2020]\\participants.
+        \vspace{0.2em}
+        \item Awarded a fully funded 4-year Bachelor of Science degree in Computer Engineering. \hfill[Fall 2020]
         \item 
         %\item Ranked 1\textsuperscript{st} in----------
         %\item ----------
@@ -163,33 +164,38 @@
 
 \section{SKILLS}
     \begin{cvcolumns}
-	\cvcolumn[0.48]{Programming/HDLs} %the number in square brackets defines the space between two columns
+	\cvcolumn[0.33]{Programming Languages} %the number in square brackets defines the space between two columns
         {
-            \vspace{-1.5em}
-            \begin{multicols}{2}
+            \vspace{-0.5em}
                 \begin{itemize}
                     \item Python
-                        \begin{itemize}
-                            \item TensorFlow
-                            \item Keras
-                            \item OpenCV
-                            \item SKlearn
-                            \item Pandas
-                        \end{itemize}
                     \item JavaScript
                     \item C/C++
                     \item Rust
                     \item Verilog HDL
-                    \item SQL
+                    % \item SQL
                     \item MySQL
-                    \item SQL Server
+                    % \item SQL Server
                     \item \LaTeX
                 \end{itemize}
-            \end{multicols}
         }
-
-        \cvcolumn[0.26]{Softwares/Platforms}{
-            \vspace{-0.5em}
+        \cvcolumn[0.22]{Frameworks} %the number in square brackets defines the space between two columns
+        {
+            \vspace{-.5em}
+                \begin{itemize}
+                        \item TensorFlow
+                        \item Keras
+                        \item NLTK
+                        \item SKlearn
+                        \item Pandas
+                        \item SpaCy
+                        \item FastAPI
+                \end{itemize}
+        }
+        
+        \cvcolumn[0.5]{Softwares/Platforms/Tools}{
+            \vspace{-1.5em}
+            \begin{multicols}{2}
                 \begin{itemize}
                     \item Docker + Kubernetes
                     \item Proteus
@@ -198,17 +204,22 @@
                     \item MS Visio
                     \item MS Excel
                     \item MS Word
-                \end{itemize}
+                    \item MS Visual Studio
+                    \item Git
+                    \item GitHub
+                    \item Linux
+                    \end{itemize}
+                \end{multicols}
         }
-        \cvcolumn[0.26]{Tools/IDEs}{
-            \vspace{-0.5em}
-            \begin{itemize}
-                \item MS Visual Studio
-                \item Git
-                \item GitHub
-                \item Linux
-            \end{itemize}
-        }
+    %     \cvcolumn[0.26]{Tools/IDEs}{
+    %         \vspace{-0.5em}
+    %         \begin{itemize}
+    %             \item MS Visual Studio
+    %             \item Git
+    %             \item GitHub
+    %             \item Linux
+    %         \end{itemize}
+    %     }
     \end{cvcolumns}
 
 \section{TEACHING EXPRIENCE}
@@ -219,6 +230,7 @@
     			\begin{itemize} 
     				\item\textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~z.nasr}{Dr. Zahra Nasrollahi (Tehran University)}}
                         \item\textcolor{gray} {Actively participated in curriculum planning and lesson delivery, working closely with faculty members.}
+                        \vspace{0.2em}
                         \item\textcolor{gray}{80+ students}
     			\end{itemize}
        
@@ -226,6 +238,7 @@
     			\begin{itemize}
     				\item \textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~f.esmaeili.kh}{Dr. Fatemeh Esmaeili Khalil Saraei  (Tehran University)}}
                         \item\textcolor{gray} {Provided one-on-one tutoring and academic support to students, resulting in increased engagement and grades.}
+                        \vspace{0.2em}
                         \item\textcolor{gray}{30+ students}
     			\end{itemize}
 
@@ -292,19 +305,22 @@
  %    		\item Step 3: --------------------.
  %    		\item \textcolor{gray}{Supervisor:\href{http://webdocs.cs.ualberta.ca/~joerg/}{Dr. ---- ----}}
  %    	\end{itemize}
-	\item Old Black and White Image Colorization Using Convolutional Neural Networks
-    	\begin{itemize}
-    		\item Converting images from RGB format to LAB.
-    		\item Extracting L channels and AB channels of images and training the network.
-    		\item{ \href{https://www.kaggle.com/datasets/shravankumar9892/image-colorization}{This dataset} has been utilized.
-    	\end{itemize}
-    \vspace{0.5em}
 	% \item Hand Gesture Recognition Using OpenCV
  %    	\begin{itemize}
  %    		\item Step 1: 
  %    		\item Step 2: 
  %    		\item Step 3: 	
  %    	\end{itemize}
+        \item 
+            \begin{itemize}
+                \item Creating a high-quality software requirement specification document for the system.
+                \item Creating ER diagram for the system database.
+                \item Specifying, visualizing, and documenting the system using UML diagrams.
+                %\item 
+                \item \textcolor{gray}{Supervisor: \href{https://profile.ut.ac.ir/en/~naghashasadi}{Dr. Ali NaghashAsadi  (Tehran University)}}
+            \end{itemize}
+        \vspace{0.5em}
+        
         \item Planning, Analysis, and Design of an Online Auction System
             \begin{itemize}
                 \item Creating a high-quality software requirement specification document for the system.
@@ -329,7 +345,12 @@
     		\item Above 85 percent accuracy
     		%{Supervisor:\href{http://webdocs.cs.ualberta.ca/~joerg/}{Dr. ---- ----}}
     	\end{itemize}
-
+    \vspace{0.5em} 
+	\item Old Black and White Image Colorization Using Convolutional Neural Networks
+    	\begin{itemize}
+    		\item Converting images from RGB format to LAB.
+    		\item Extracting L channels and AB channels of images and training the network.	\item{\href{https://www.kaggle.com/datasets/shravankumar9892/image-colorization}{This dataset} has been utilized. (taken from the \href{https://press.liacs.nl/mirflickr/mirdownload.html}{MIRFLICKR25k} dataset)
+    	\end{itemize}
     \end{itemize}
 
     
@@ -343,7 +364,143 @@
 % 		\end{itemize}
 
 % \end{itemize}
+
+% \section{WORK EXPERIENCE}
+% \begin{itemize}
+%     \item \href{http://altaml.com/}{\authorimg{Images/altaml.jpg} \emph{AltaML}} \hfill May 2018-present
+    
+%     Machine Learning Engineer
+    
+%     3+ years in development and deployment of machine learning algorithms: 
+%     \begin{itemize}
+%         \item Natural Language Processing
+%         \begin{itemize}
+%             \item Chatbots
+%             \begin{itemize}
+%                 \item A project leading to two chatbot products between AltaML and clients.
+%                 \item A very simple showcase of the chatbot is deployed in \href{http://hejazizo.com/}{my personal homepage}.
+%             \end{itemize}
+%             \item Question answering on insurance text data to identify faults and missing fields in forms filled by customers.
+%             \item Text classification
+%             \item Entity extraction
+%             \item Spelling correction
+%             \item Sentiment Analysis
+%         \end{itemize}
+%         \item Financial transactional data analysis with \href{https://www.atb.com/personal/}{ATB} bank to analyse account usage and recommends ATB products.
+        
+%         \begin{itemize}
+%             \item Developed several machine learning models (with over 90\% accuracy) to detect the account usage and suggest users to switch from a Business/Personal/... account to other suitable accounts types.
+%             \item \href{https://www.altaml.com/news/opportunity-calgary-investment-fund-supports-altaml-initiative-to-create-ai-ml-talent-pipeline/}{Lead to partnership with ATB for a \$3.25 million investment over 3 years for 240 interns.}
+%         \end{itemize}
+        
+%         \item Medical data lung cancer survival analysis using RNA sequence data.
+%         \begin{itemize}
+%             \item The most profitable project in AltaML history at its time.
+%         \end{itemize}
+        
+%         \item Recommendation systems that suggest relevant items to user in filling forms with insurance companies. The project included development of several recommendation engines to help users while filling claim forms.
+%         \item Financial donation data analysis to identify and predict big donors with Alberta University Hospital Foundation (UHF).
+        
+%         \item Cancer type classification and prediction using RNA sequence data.
+%         \item COVID recovery prediction based on users medical tests data.
+        
+%     \end{itemize}
+    
+%     \item \href{https://ualberta.ca/}{\authorimg{Images/alberta.jpg}} University of Alberta \hfill 2016-2020
+    
+%     AI Research Scientist
+%     \begin{itemize}
+%         \item Paraphrase Generation by Variational Autoencoders and Metropolis--Hastings Sampling
+%         \begin{itemize}
+%             \item Developed an unsupervised paraphrasing technique trained on \href{https://nlp.stanford.edu/projects/snli/}{SNLI} and \href{https://www.kaggle.com/c/quora-question-pairs/data}{Quora} dataset, introducing novel phrase-level paraphrasing technique with Variational Autoencoders.
+%         \end{itemize}
+%         \item Mapping Macroscopic Brain Connectomes via Multidimensional Encoding, Learning, and Optimization using dMRI brain images.
+%         \begin{itemize}
+%             \item A project between University of Alberta and University of Indiana University
+%             \item Mapping connectomes for the arcuate fasciculus, using extremely high-dimensional sparse tensors.
+%             \item Loading data and visualization in Matlab
+%             \item Encoding, learning, and optimization in C with GPU parallel computing.
+%             \item \textcolor{gray}{Supervisor: \href{http://webdocs.cs.ualberta.ca/~whitem/}{Dr. Martha White}}
+%         \end{itemize}
+        
+%         \item Diagnosis of Alzheimer's Disease Based on Structural MRI Images using Machine Learning Techniques.
+%         \begin{itemize}
+
+%             \item Step 1: Preprocessing MRI images using Freesurfer tools.
+%             \item Step 2: Feature extraction.
+%             \item Step 3: Applying machine learning techniques for diagnosis task.
+%             \item \textcolor{gray}{Supervisor: \href{http://webdocs.cs.ualberta.ca/~joerg/}{Dr. Jörg Sander}}
+            
+%         \end{itemize}
+%     \end{itemize}
+% \end{itemize}
+
+% \section{certificates}
+%     \begin{multicols}{2}
+%         \begin{itemize}
+%             \item \authorimg{Images/tf.png} \href{https://www.udemy.com/course/complete-guide-to-tensorflow-for-deep-learning-with-python/learn/lecture/8073744?start=15#overview}{Complete Guide to TensorFlow for Deep Learning with Python}
+            
+%             \item \authorimg{Images/tf.png} \href{https://www.udemy.com/course/complete-tensorflow-2-and-keras-deep-learning-bootcamp/}{Complete Tensorflow 2 and Keras Deep Learning Bootcamp}
+            
+%             \item \authorimg{Images/torch.png}
+%             \href{https://janaltaml.udemy.com/course/pytorch-for-deep-learning-with-python-bootcamp/}{PyTorch for Deep Learning with Python Bootcamp}
+        
+%             \item \authorimg{Images/docker.png}
+%             \href{https://www.udemy.com/course/docker-mastery/learn/lecture/6489880?start=15#overview}{Docker Mastery: with Kubernetes +Swarm from a Docker Captain}
+        
+%             \item \authorimg{Images/docker.png}
+%             \href{https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/}{Docker and Kubernetes: The Complete Guide}
+        
+%             \item \authorimg{Images/python.png} \href{https://www.udemy.com/course/complete-python-bootcamp/}{Complete Python Bootcamp: Go from zero to hero in Python 3} 
+            
+%             \item \authorimg{Images/python.png} \href{https://www.udemy.com/course/python-beyond-the-basics-object-oriented-programming/}{Python Beyond the Basics - Object-Oriented Programming}
+            
+%             \item \authorimg{Images/pandas.png} \href{https://www.udemy.com/course/data-analysis-with-pandas-python/}{Data Analysis Course with Pandas : Hands on Pandas, Python}
+            
+%             \item \authorimg{Images/pandas.png} \href{https://www.udemy.com/course/data-analysis-with-pandas/}{Data Analysis with Pandas and Python}
+            
+%             \item \authorimg{Images/ubuntu.jpg} \href{https://www.udemy.com/course/linux-mastery/}{Linux Mastery: Master the Linux Command Line in 11.5 Hours}
+            
+%             \item \authorimg{Images/ubuntu.jpg} \href{https://www.udemy.com/course/linux-administration-bootcamp/}{Linux Administration Bootcamp: Go from Beginner to Advanced}
+            
+%             \item \authorimg{Images/mysql.png} \href{https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/}{The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert}
+            
+    
+%             \item \authorimg{Images/ml.png}  \href{https://www.coursera.org/learn/machine-learning}{Machine Learning}
+            
+%             \item \authorimg{Images/dj.png}
+%             \href{https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/learn/lecture/6550402?start=0#overview}{Python and Django Full Stack Web Developer Bootcamp}
+            
+%             \item \authorimg{Images/python.png} \href{https://www.coursera.org/specializations/python}{Python for Everybody Specialization}
+            
+%             \item  {\large\authorimg{Images/cuda.png}} \href{https://www.udemy.com/introduction-to-parallel-programming-using-gpgpu-and-cuda/learn/v4/overview}{Parallel Programming using GPGPU and CUDA}
+            
+%             \item  \authorimg{Images/dscience.jpg}  \href{https://www.coursera.org/learn/data-scientists-tools}{The Data Scientist's Toolbox}
+            
+%             \item  \authorimg{Images/html5.PNG} \href{https://www.coursera.org/learn/html}{Introduction to HTML5} 
+            
+%             \item  \authorimg{Images/css3.png} \href{https://www.coursera.org/learn/introcss}{Introduction to CSS3} 
+            
+%             \item  \authorimg{Images/js.png} \href{https://www.coursera.org/learn/javascript}{Interactivity with JavaScript}  
+            
+%             \item  {\large\authorimg{Images/git.png}} \href{https://www.udemy.com/git-complete/learn/v4/overview}{Git Complete}
+            
+%         \end{itemize}
+%     \end{multicols}
+
+
+% \section{publication}
+% 	Hejazizo, A. , Azad, S. P. , \& Van Hertem, D.. (2015). Interoperability of Protection Systems in High Voltage Direct Current (HVDC) Networks. In \textit{CIGRE Canada Conference - Future Power Systems and Grid Resiliency} (pp. 1-6). October.
 	
+% 	\textcolor{gray}{\faCloudDownload}~Click \href{https://cigre.ca/papers/cigre-paper-hejazizo-ualberta-ca-y-641.pdf}{\textcolor{red}{here}} to download.
+% \begin{itemize}
+%     \item Hejazizo, A. , Azad, S. P. , \& Van Hertem, D.. (2015). Interoperability of Protection Systems in High Voltage Direct Current (HVDC) Networks. In \textit{CIGRE Canada Conference - Future Power Systems and Grid Resiliency} (pp. 1-6). October.
+%     \\
+%     \textcolor{gray}{\faCloudDownload}~Click \href{https://cigre.ca/papers/cigre-paper-hejazizo-ualberta-ca-y-641.pdf}{\textcolor{red}{here}} to download.
+    
+%     \item Gorgan, A., Hejazizo, P.V., Wetzer, J.M., Verhaart, H.F., Wouters, P.A., Van Schijndel, A. and Tanasescu, G., 2012, May. Calculation of the remaining lifetime of power transformers paper insulation. In 2012 13th International conference on optimization of electrical and electronic equipment (OPTIM) (pp. 293-300).
+% \end{itemize}
+ 
 \vspace{2.0em}
 
 \centerline{\underline{\textbf{	\faExclamationCircle \hspace{0.5 pt} References, Further information, and Proofs are available upon Request}}}
