@@ -1,0 +1,351 @@
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\moderncvstyle{banking} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[scale=0.82]{geometry}%\usepackage{cmcyr}% Reduce document margins
+
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\usepackage{fontenc}
+\newcommand*\arc{{\fontfamily{pbk}\fontseries{db}\selectfont+}}
+
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your namehttps://www.overleaf.com/project/6265254e1ccb411db02e201c
+\usepackage{fontawesome}
+
+% Small images inline with text
+\newcommand*{\authorimg}[1]{%
+	\raisebox{-.25\baselineskip}{%moves little logos up and down, the greater the number, the higher the logo.
+		\includegraphics[
+		height=\baselineskip,
+		width=\baselineskip,
+		keepaspectratio,
+		]{#1}%
+	}%
+}
+
+% Adjust the page margins
+%\usepackage[scale=0.8,top=0.5cm, bottom=0.1cm]{geometry}
+% \usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage{xpatch}
+\xpatchcmd\cventry{,}{}{}{}
+
+
+% personal data
+
+\firstname{Erfan} % Your first name
+\familyname{Nasiri} % Your last name
+\title{Curriculum Vitae}
+\address{\textbf{\href{https://ece.ut.ac.ir/}{University of Tehran - Department of Electrical and Computer Engineering}{}}}
+\mobile{(+98) 930 046 0503}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{ erfan.nassirri@gmail.com}
+\homepage{aureate.ir} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+
+%\extrainfo{}
+\social[linkedin]{erfannnasiri}
+\social[github]{Erfanium-79}
+\social[twitter]{nasiri\textunderscore erfan}
+
+%\photo[70pt][0.2pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+% custom color
+\definecolor{darkgreen}{RGB}{0, 150, 0} %green
+\rfoot { \color{gray} \emph{Erfan Nasiri} \bullet ~ \emph{\thepage}\emph{/3}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\vspace*{-1.05mm}
+\makecvtitle
+\vspace*{-5mm}  % default : commented and -1
+
+\section{EDUCATION}
+    \begin{itemize}
+        \item \textbf{Bachelor of Science} \hfill September, 2019-Present \\
+    	\href{https://ut.ac.ir/fa/}{\authorimg{Images/TehranUni.jpg} \emph{University of Tehran}} \hfill \emph{Tehran-Iran}
+    		
+    	\begin{itemize}
+    		\item Electrical and Computer Engineering
+    		\begin{itemize}		
+    			\item Major: Software Engineering \hspace{10 pt} 
+    			\item GPA: 3.2/4  (140 credits)
+            \begin{itemize}
+                \item Last two years: ~~3.65
+                \item Last year:~~~~~~~~~ 3.68
+            \end{itemize}
+    		\end{itemize}
+    	\end{itemize}
+    \end{itemize}
+
+
+\section{RESEARCH INTERESTS}
+%    \begin{multicols}{2}
+        \begin{itemize}
+            \begin{multicols}{2}
+                \item Machine Learning 
+		    \item Computer Vision
+		    \item NLP
+                \item AI in Medical Diagnosis
+
+		    %\item Fourth  research interest
+            \end{multicols}
+	\end{itemize}
+%    \end{multicols}
+
+        
+\section{HONORS \& AWARDS}
+    \begin{itemize}
+        \item  Top 5\% in Iran's nationwide university entrance exam, among more than 155,000 participants. \hfill[Summer 2020]
+        \item Awarded a fully funded 4-year Bachelor of Science degree in Computer Engineering. [Fall 2020]
+        \item 
+        %\item Ranked 1\textsuperscript{st} in----------
+        %\item ----------
+        % \item ----------
+        % \item ----------
+    \end{itemize}
+
+
+\section{SELECTED COURSES} 
+    \begin{itemize}
+        \begin{multicols}{2}
+            % \item \authorimg{Images/TehranUni.jpg} Logic Circuits \hspace{110pt}[Fall 2021]
+            %     \begin{itemize}
+            %         \item \textcolor{gray}{Instructor: \href{https://cv.birjand.ac.ir/vahedi/en}{Dr. Mostafa Vahedipour Dahraie}}
+            %         \item \textcolor{gray}{Grade: A\arc}
+                % \end{itemize}
+            % \item \authorimg{Images/TehranUni.jpg} Electric Circuits \hspace{101pt}[Fall 2021]
+            %     \begin{itemize}
+            %         \item \textcolor{gray}{Instructor: \href{https://cv.birjand.ac.ir/vahedi/en}{Dr. Mostafa Vahedipour Dahraie}}
+            %         \item \textcolor{gray}{Grade: A\arc}
+            %     \end{itemize}
+            \item \authorimg{Images/TehranUni.jpg} Artificial Intelligence ~~~~~~~~~~[Fall 2022]
+                \begin{itemize}
+                    \item \textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~hhsajedi}{Dr. Hedieh Sajedi}}
+                    \item \textcolor{gray}{Grade: A\arc}
+                \end{itemize}
+            \item \authorimg{Images/TehranUni.jpg} Operating Systems ~~~~~~~~~~~~[Fall 2022]
+                \begin{itemize}
+                    \item \textcolor{gray}{Instructor: {Dr. Maliheh Ghomsheh}}
+                    \item \textcolor{gray}{Grade: A\arc}
+                \end{itemize}
+            \item \authorimg{Images/TehranUni.jpg} Database Design ~~~~~~~~~~~~~~~~~[Spring 2023]
+                \begin{itemize}
+                    \item \textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~naghashasadi}{Dr. Ali NaghashAsadi}}
+                    \item \textcolor{gray}{Grade: A\arc}
+                \end{itemize}
+            \item \authorimg{Images/TehranUni.jpg} Systems Analysis and Design ~~[Spring 2023]
+                \begin{itemize}
+                    \item \textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~naghashasadi}{Dr. Ali NaghashAsadi}}
+                    \item \textcolor{gray}{Grade: A}
+                \end{itemize}
+        \end{multicols}
+    \end{itemize}
+    
+% \section{PUBLICATIONS}
+%     \begin{itemize}
+%        \item ----------------------------
+%        \vspace{1em}
+%        \item Conferences
+%     \end{itemize}
+
+%\goodbreak
+
+\section{SKILLS}
+    \begin{cvcolumns}
+	\cvcolumn[0.48]{Programming/HDLs} %the number in square brackets defines the space between two columns
+        {
+            \vspace{-1.5em}
+            \begin{multicols}{2}
+                \begin{itemize}
+                    \item Python
+                        \begin{itemize}
+                            \item TensorFlow
+                            \item Keras
+                            \item OpenCV
+                            \item SKlearn
+                            \item Pandas
+                        \end{itemize}
+                    \item JavaScript
+                    \item C/C++
+                    \item Rust
+                    \item Verilog HDL
+                    \item SQL
+                    \item MySQL
+                    \item SQL Server
+                    \item \LaTeX
+                \end{itemize}
+            \end{multicols}
+        }
+
+        \cvcolumn[0.26]{Softwares/Platforms}{
+            \vspace{-0.5em}
+                \begin{itemize}
+                    \item Docker + Kubernetes
+                    \item Proteus
+                     \item Arduino
+                    % \item CodeVision
+                    \item MS Visio
+                    \item MS Excel
+                    \item MS Word
+                \end{itemize}
+        }
+        \cvcolumn[0.26]{Tools/IDEs}{
+            \vspace{-0.5em}
+            \begin{itemize}
+                \item MS Visual Studio
+                \item Git
+                \item GitHub
+                \item Linux
+            \end{itemize}
+        }
+    \end{cvcolumns}
+
+\section{TEACHING EXPRIENCE}
+    \begin{itemize}
+	\item Teaching Assistant
+		\begin{itemize}	
+			\item \authorimg{Images/TehranUni.jpg} Physics II \hfill Winter 2023
+    			\begin{itemize} 
+    				\item\textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~z.nasr}{Dr. Zahra Nasrollahi (Tehran University)}}
+                        \item\textcolor{gray} {Actively participated in curriculum planning and lesson delivery, working closely with faculty members.}
+                        \item\textcolor{gray}{80+ students}
+    			\end{itemize}
+       
+			\item \authorimg{Images/TehranUni.jpg} Differential equations (ODE) \hfill Winter 2023
+    			\begin{itemize}
+    				\item \textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~f.esmaeili.kh}{Dr. Fatemeh Esmaeili Khalil Saraei  (Tehran University)}}
+                        \item\textcolor{gray} {Provided one-on-one tutoring and academic support to students, resulting in increased engagement and grades.}
+                        \item\textcolor{gray}{30+ students}
+    			\end{itemize}
+
+			\item \authorimg{Images/TehranUni.jpg} Engineering Mathematics (Advanced) \hfill Fall 2023
+    			\begin{itemize} 
+    				\item \textcolor{gray}{Instructor: \href{https://profile.ut.ac.ir/en/~f.esmaeili.kh}{Dr. Fatemeh Esmaeili Khalil Saraei  (Tehran University)}}
+                        \item\textcolor{gray} {Collaborated with a fellow TA to Design assignments, and instruct course material.}
+                        \item\textcolor{gray}{40+ students}
+    			\end{itemize}
+		\end{itemize}
+    \end{itemize}
+
+
+% \section{Language Skills}
+%     \begin{itemize}
+%         \item Persian \hspace{5 pt} Native
+%         \vspace{0.15em}
+%         \item English \hspace{6 pt} Fluent
+%         \vspace{0.15em}
+%             \begin{itemize}
+%                 \item TOEFL Score: (Reading: 25, Listening: 25, Speaking: 25, Writing: 25)
+%             %    \begin{itemize}
+%             %        \item Reading:\hspace{11 pt}25
+%             %        \item Listening:\hspace{7 pt}25
+%             %        \item Speaking:\hspace{7 pt}25
+%             %        \item Writing:\hspace{13 pt}25
+%             %    \end{itemize}
+%             \end{itemize}
+%     \end{itemize}
+
+% \section{WORK EXPRIENCE}
+%     \begin{itemize}
+% 		\item \href{http://altaml.com/}{\authorimg{Images/download.jpg} \emph{company name}}
+		
+% 		brief job title \hfill month 20xx-month 20xx/present %brief job title means something like : Several machine learning projects, including but not limited to:
+% 		\begin{itemize}
+% 			\item Natural Language Processing
+% 			\begin{itemize}
+% 				\item Question answering
+% 				\item Text classification
+% 				\item Entity extraction
+% 			\end{itemize}
+% 			\item Survival Analysis
+% 			\item Cancer type prediction and classification
+% 			\item ...
+% 		\end{itemize}
+% 	\end{itemize}
+% \section{INTERNSHIPS}
+
+
+\section{PROJECTS}
+    \begin{itemize}
+	% \item Project Title.
+ %    	\begin{itemize}
+ %    		\item -----------------------------.
+ %    		\item -----------------------------.
+ %    		\item -----------------------------.
+ %    		\item \textcolor{gray}{Supervisor:\href{http://webdocs.cs.ualberta.ca/~whitem/}{Dr. ----- ----}}
+ %    	\end{itemize}
+	% \item Project Title.
+ %    	\begin{itemize}
+ %    		\item Step 1: --------------------.
+ %    		\item Step 2: --------------------.
+ %    		\item Step 3: --------------------.
+ %    		\item \textcolor{gray}{Supervisor:\href{http://webdocs.cs.ualberta.ca/~joerg/}{Dr. ---- ----}}
+ %    	\end{itemize}
+	\item Old Black and White Image Colorization Using Convolutional Neural Networks
+    	\begin{itemize}
+    		\item Converting images from RGB format to LAB.
+    		\item Extracting L channels and AB channels of images and training the network.
+    		\item{ \href{https://www.kaggle.com/datasets/shravankumar9892/image-colorization}{This dataset} has been utilized.
+    	\end{itemize}
+    \vspace{0.5em}
+	% \item Hand Gesture Recognition Using OpenCV
+ %    	\begin{itemize}
+ %    		\item Step 1: 
+ %    		\item Step 2: 
+ %    		\item Step 3: 	
+ %    	\end{itemize}
+        \item Planning, Analysis, and Design of an Online Auction System
+            \begin{itemize}
+                \item Creating a high-quality software requirement specification document for the system.
+                \item Creating ER diagram for the system database.
+                \item Specifying, visualizing, and documenting the system using UML diagrams.
+                %\item 
+                \item \textcolor{gray}{Supervisor: \href{https://profile.ut.ac.ir/en/~naghashasadi}{Dr. Ali NaghashAsadi  (Tehran University)}}
+            \end{itemize}
+        \vspace{0.5em}
+	\item Project Title: Solving Maze Problem Using Reinforcement Learning
+    	\begin{itemize}
+    		\item Problem environment included flags and walls.
+    		\item The agent had to cross all flags and find the shortest path without hitting a wall.
+    		\item Applying reinforcement learning techniques for the required tasks.
+    		\item \textcolor{gray}{Supervisor: \href{https://profile.ut.ac.ir/en/~hhsajedi}{Dr. Hedieh Sajedi  (Tehran University)}}
+    	\end{itemize}
+        \vspace{0.5em}
+        \item Handwritten Digit Recognition using Neural Networks
+    	\begin{itemize}
+    		\item The MNIST dataset has been utilized
+    		\item No use of Keras and TensorFlow
+    		\item Above 85 percent accuracy
+    		%{Supervisor:\href{http://webdocs.cs.ualberta.ca/~joerg/}{Dr. ---- ----}}
+    	\end{itemize}
+
+    \end{itemize}
+
+    
+% \section{LANGUAGE SKILLS}
+% \begin{itemize}
+%    \item Persian \hspace{5 pt} Native
+%    %\vspace{2mm}
+%    \item English \hspace{6 pt} Fluent   
+%        \begin{itemize}
+% 			 \item TOEFL Score: 95 (Reading: 25, Listening: 25, Speaking: 25, Writing: 25)
+% 		\end{itemize}
+
+% \end{itemize}
+	
+\vspace{2.0em}
+
+\centerline{\underline{\textbf{	\faExclamationCircle \hspace{0.5 pt} References, Further information, and Proofs are available upon Request}}}
+  
+\end{document}
